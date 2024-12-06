@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery</title>
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<style>
+    
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 10px solid floralwhite; 
+  border-top: 10px solid black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+.content {
+  display: none; 
+}
+  
+</style>
+
+</head>
+
+<body>
+  
+<div class="loader-container" id="loader">
+    
+<div class="loader"></div>
+  
+</div>
+
+<nav class="navbar">
+    
+<div class="logo">
+     
+<img src="logo.png"alt="Logo"></div>
+    
+<div class="nav-links">
+      
+<li><p class="p">ArtGallary</p></li>
+      
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+    
+</div>
+  
+</nav>
+
+<div class="body-container">
+
+<div class="background">
+      
+<div class="container-wrapper">
+
+<div class="container">
+          
+<img src="Art1.jpg" alt="Custom Image 1">
+          
+<p>French Paisley Design</p></div>
+        
+<div class="container">
+          
+<img src="Art2.jpg" alt="Custom Image 2">
+          
+<p>Geometric Mandala Design</p></div>
+
+<div class="container">
+        
+<img src="Art3.jpg" alt="Description ">
+        
+<p>Portraiture</p></div>
+
+<div class="container">
+        
+<img src="Art4.jpg"alt="Description ">
+        
+<p>Bumblebees Feed On Nectar</p></div>
+
+<div class="container">
+
+<img src="Art5.jpg" alt="Description ">
+        
+<p>Preliminary Drawing Of Eye</p></div>
+
+<div class="container">
+        
+<img src="Art6.jpg" alt="Description ">
+        
+<p>Sketch Of Pot</p></div>
+
+<div class="container">
+        
+<img src="Art7.jpg" alt="Description ">
+        
+<p>Three Blooms Sketch</p></div>
+
+<div class="container">
+
+<img src="Art8.jpg" alt="Description ">
+        
+<p>Sketch Of Cherry Blossom</p></div>
+
+<div class="container">
+
+<img src="Art9.jpg" alt="Description ">
+        
+<p>Sketch Of Sunflower </p></div>
+
+<div class="container">
+
+<img src="Art10.jpg" alt="Description ">
+        
+<p>Sketch Of Tulip</p></div>
+
+<div class="container">
+
+<img src="Art11.jpg" alt="Description ">
+        
+<p>Nature's Scenario</p></div>
+
+
+      
+</div>
+    
+</div>
+  
+</div>
+
+<script>
+  
+setTimeout(function() {
+
+document.getElementById('loader').style.display = 'none';
+
+document.querySelector('.content').style.display = 'block';
+}, 3000);
+  
+</script>
+  
+</body>
+
+<footer class="foot">
+  
+<p>Thanks for exploring our webpage.</p>     
+        
+</footer>
+
+</html>
